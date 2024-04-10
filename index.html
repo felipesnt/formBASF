@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Interesse em Produtos | shop@BASF</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero">
+        <header>
+            <div class="hero-content">
+                <div>
+                    <img src="./assets/logo.png" />
+                </div>
+                <div>
+                    <h1>Formulário de Interesse em Produtos | shop@BASF</h1>
+                    <h2>Gostaríamos de saber sua opinião! Para isso, por favor, preencha os campos abaixo.</h2>
+                </div>
+            </div>
+        </header>
+    </div>
+    <main class="container-form">
+        <form id="form" class="form" name="FormProdutosBASF">
+            <!-- dados principais -->
+            <div class="container-form-dados">
+                <div class="form-content">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="data[nome]" id="nome" placeholder="Digite seu nome">
+                    <small>Mensagem de erro</small>
+                </div>
+
+                <div class="form-content">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" name="data[sobrenome]" id="sobrenome" placeholder="Digite seu sobrenome">
+                    <small>Mensagem de erro</small>
+                </div>
+
+                <div class="form-content">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="data[email]" id="email" placeholder="Digite seu email">
+                    <small>Mensagem de erro</small>
+                </div>
+
+                <div class="form-content">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" name="data[telefone]" id="telefone" placeholder="00000000000">
+                    <small>Mensagem de erro</small>
+                </div>
+
+                <div class="form-content">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" name="data[cidade]" id="cidade" placeholder="Digite sua cidade">
+                </div>
+
+                <div class="form-content">
+                    <label for="volume">Volume</label>
+                    <input type="number" name="data[volume]" id="volume" min="0" max="999" step="1">
+                </div>
+            </div>
+            <!-- fim dados principais -->
+
+            <!-- dados condicionais -->
+            <div class="container-form-condicional">
+                <h2>Sabe qual produto utilizar?</h2>
+                    <div class="form-content-condicional">
+                        <input type="radio" name="opcaoprod" id="prodSim" checked>
+                        <label for="prodSim">Sim, sei qual produto utilizar</label>
+                    </div>
+                
+                    <div class="form-content-condicional">
+                        <input type="radio" name="opcaoprod" id="prodNao">
+                        <label for="prodNao">Não, preciso de ajuda para escolher o produto</label>
+                    </div>
+            </div>
+
+            <!-- lista de produtos -->
+            <div class="product-list" id="list">
+                <h2 class="product-list">Selecione o seu produto</h2>
+                    <div class="listaprodutos">
+                        <!-- parte 1 da lista -->
+                        <div class="pt1">
+                            <div class="product-list">
+                                <input type="checkbox" id="prod1" name="data[produtos]" value="Produto 1">
+                                <label for="prod1">Produto 1</label>
+                            </div>
+
+                            <div class="product-list">
+                                <input type="checkbox" id="prod2" name="data[produtos]" value="Produto 2">
+                                <label for="prod2">Produto 2</label>
+                            </div>
+
+                            <div class="product-list">
+                                <input type="checkbox" id="prod3" name="data[produtos]" value="Produto 3">
+                                <label for="prod3">Produto 3</label>
+                            </div>
+
+                            <div class="product-list">
+                                <input type="checkbox" id="prod4" name="data[produtos]" value="Produto 4">
+                                <label for="prod4">Produto 4</label>
+                            </div>
+
+                            <div class="product-list">
+                                <input type="checkbox" id="prod5" name="data[produtos]" value="Produto 5">
+                                <label for="prod5">Produto 5</label>
+                            </div>
+
+                            <div class="product-list">
+                                <input type="checkbox" id="prod6" name="data[produtos]" value="Produto 6">
+                                <label for="prod6">Produto 6</label>
+                            </div>
+
+                            <div class="product-list">
+                                <input type="checkbox" id="prod7" name="data[produtos]" value="Produto 7">
+                                <label for="prod7">Produto 7</label>
+                            </div>
+
+                            <div class="product-list">
+                                <input type="checkbox" id="prod8" name="data[produtos]" value="Produto 8">
+                                <label for="prod8">Produto 8</label>
+                            </div>
+                        </div>
+
+                        <!-- parte 2 da lista -->
+                        <div class="pt2">
+                            <div class="product-list">
+                                <input type="checkbox" id="prod9" name="data[produtos]" value="Produto 9">
+                                <label for="prod9">Produto 9</label>
+                            </div>
+
+                            <div class="product-list">
+                                <input type="checkbox" id="prod10" name="data[produtos]" value="Produto 10">
+                                <label for="prod10">Produto 10</label>
+                            </div>
+
+                            <div class="product-list">
+                                <input type="checkbox" id="prod11" name="data[produtos]" value="Produto 11">
+                                <label for="prod11">Produto 11</label>
+                            </div>
+
+                            <div class="product-list">
+                                <input type="checkbox" id="prod12" name="data[produtos]" value="Produto 12">
+                                <label for="prod12">Produto 12</label>
+                            </div>
+
+                            <div class="product-list">
+                                <input type="checkbox" id="prod13" name="data[produtos]" value="Produto 13">
+                                <label for="prod13">Produto 13</label>
+                            </div>
+
+                            <div class="product-list">
+                                <input type="checkbox" id="prod14" name="data[produtos]" value="Produto 14">
+                                <label for="prod14">Produto 14</label>
+                            </div>
+
+                            <div class="product-list">
+                                <input type="checkbox" id="prod15" name="data[produtos]" value="Produto 15">
+                                <label for="prod15">Produto 15</label>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+            <!-- mensagem caso a condicional 2 for assinalada -->
+            <div class="mensagem" id="msg-user">
+                <h3>Descreva para qual finalidade está precisando</h3>
+                    <textarea name="data[mensagem]" id="mensagem" rows="5" cols="60" placeholder="Escreva aqui sua mensagem"></textarea>
+            </div>
+            <br>
+            <!-- check de política de privacidade -->
+            <div class="form-content">
+                <input type="checkbox" id="politica" name="data[politica]">
+                    <label for="politica">Estou de acordo com a <a href="#">Política de Privacidade</a></label>
+                    <br>    
+                    <small>Mensagem de erro</small>
+            </div>
+            <br>
+            <!-- botão de submissão de dados -->
+            <div class="submit-button">
+                <button type="submit" class="submit-button">Submeter</button>
+            </div>
+            
+        </div>
+        </form>
+    </main>
+    <!-- script para manipulação -->
+    <script src="./script.js"></script>
+</body>
+</html>
