@@ -324,9 +324,9 @@ input[type="number"]{
     input[type="email"], 
     input[type="submit"], 
     input[type="tel"]{
-    width: 80%;
-    padding: 8px;
-    margin-bottom: 1px;
+        width: 80%;
+        padding: 8px;
+        margin-bottom: 1px;
     }
 
     textarea{
@@ -335,7 +335,12 @@ input[type="number"]{
         }
 
     input[type="number"]{
-    width: 75px;
-    height: 33px;
+        width: 75px;
+        height: 33px;
+    }
+
+    .thanks{
+        width: 90%; /* Reduz a largura do container */
+        margin-left: 30px; /* Remove margens */
     }
 }
