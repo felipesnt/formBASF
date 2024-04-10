@@ -340,7 +340,8 @@ input[type="number"]{
     }
 
     .thanks{
-        width: 90%; /* Reduz a largura do container */
-        margin-left: 30px; /* Remove margens */
+        width: 90%;
+        margin-left: 30px;
+        margin-right: 30px;
     }
 }
