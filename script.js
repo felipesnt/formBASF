@@ -50,13 +50,13 @@ form.addEventListener("submit", async (event) => {
             nome: nome.value,
             sobrenome: sobrenome.value,
             email: email.value,
-            telefone: telefone.value,
+            telefone: telefone.value || '',
             cidade: cidade.value || '', 
             volume: volume.value,
             politica: politica.checked ? 'Aceito' : 'Não aceito'
         };
 
-        // Adiciona dados específicos com base na escolha do usuário
+        // adiciona dados específicos com base na escolha do usuário
         if (prodSim.checked) {
             const produtosSelecionados = capturaProd();
             formData.produtos = produtosSelecionados;
@@ -67,7 +67,7 @@ form.addEventListener("submit", async (event) => {
             }
         }
 
-        // Envia os dados para a SheetDB via requisição fetch
+        // envia os dados para a SheetDB via requisição fetch
         try {
             const response = await fetch('https://sheetdb.io/api/v1/w41amuoomerdc', {
                 method: 'POST',
@@ -129,7 +129,7 @@ function checaInputs() {
         sucesso(email);
     }
 
-    if(!regexNumeros.test(valorTelefone)){
+    if(valorTelefone !== "" && !regexNumeros.test(valorTelefone)){
         erroInput(telefone, "Insira um número com DDD");
         todosValidos = false;
     }else{
@@ -162,3 +162,4 @@ function sucesso(input) {
   
     formControl.className = "form-content";
   }
+
